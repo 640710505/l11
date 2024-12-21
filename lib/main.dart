@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         home: Scaffold(
             appBar: AppBar(
               centerTitle: true,
-              title: Text("Hello dara" , style: TextStyle(
+              title: Text("Hello Friend" , style: TextStyle(
                   fontSize: 50,
                   fontWeight: FontWeight.bold,
                   color: Colors.yellow,
@@ -28,24 +28,104 @@ class MyApp extends StatelessWidget {
               ),
               backgroundColor: Colors.green,
               
-              
+            
             ),
-            body:Container(
-              height:200,
-              width:500,
-              color : Colors.green,
-              padding: const EdgeInsets.all(60),
-              margin: const EdgeInsets.all(20),
-              child: const Text(
-                "paste your picture here",
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
+            
+            body:Column( 
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+
+              children: [
+                
+                Container(
+                  height:100,
+                  width:1000,
+                  // color : Colors.green,
+                  
+                  child: 
+                    Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            height:50,
+                            width:50,
+                            color : Colors.green,
+                            
+                            child: const Text(
+                              "paste your picture here",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 10,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                          Container(
+                            height:50,
+                            width:50,
+                            color : Colors.green,
+                            
+                            child: const Text(
+                              "paste your picture here",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 10,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                          Container(
+                            height:50,
+                            width:50,
+                            color : Colors.green,
+                            
+                            child: const Text(
+                              "paste your picture here",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 10,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ]
+                        )
+                  ),
+                Container(
+                  height:100,
+                  width:200,
+                  color : Colors.green,
+                  
+                  child: const Text(
+                    "paste your picture here",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 10,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
                 ),
-              ),
-            ), 
+                Container(
+                  height:100,
+                  width:200,
+                  color : Colors.green,
+                  
+                  child: const Text(
+                    "paste your picture here",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 10,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ]
+            )
+            
             ));
   }
 }
