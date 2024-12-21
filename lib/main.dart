@@ -30,8 +30,9 @@ class _MyCustomWidgetState extends State<MyCustomWidget> {
 
   void _changeText() {
     setState(() {
-      _displayText =
-          _displayText == 'Hello, Flutter!' ? '√!' : 'Hello, Flutter!';
+      _displayText = _displayText == 'Hello, Flutter!'
+          ? 'success test click_ver2'
+          : 'Hello, Flutter!';
     });
   }
 
